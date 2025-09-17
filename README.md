@@ -8,3 +8,4 @@ LINK DO PLANEJAMENTO: https://miiura.github.io/planejamentocertificadora
 
 LINK DO SITE (PROJETO): https://miiura.github.io/certificadora
 
+LINK DO MODELO DE SLIDE (e slide 1): https://www.canva.com/design/DAGzL-LBL1k/PdUTrZ7eQAPXYQSwSKYq1A/edit?utm_content=DAGzL-LBL1k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
