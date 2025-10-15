@@ -16,3 +16,8 @@ LINK DO MODELO DE SLIDE (e slide): https://www.canva.com/design/DAGzL-LBL1k/PdUT
 
 
 LINK DOS CONTEÚDOS (slides e gravações): https://drive.google.com/drive/folders/16gEB1vxhnDiDQHoDxQDzLsWc46acTwIq?usp=drive_link
+
+
+AULA 1: https://www.youtube.com/watch?v=JYUl1Nr4ghA
+
+AULA 2: https://www.youtube.com/watch?v=Ps5Vc5aprX0
