@@ -21,3 +21,7 @@ LINK DOS CONTEÚDOS (slides e gravações): https://drive.google.com/drive/folde
 AULA 1: https://www.youtube.com/watch?v=JYUl1Nr4ghA
 
 AULA 2: https://www.youtube.com/watch?v=Ps5Vc5aprX0
+
+AULA 3: https://www.youtube.com/watch?v=XjQFN7KTJTg
+
+AULA 4: https://www.youtube.com/watch?v=_6OqeqIYc-8
