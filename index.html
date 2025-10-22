@@ -10,14 +10,16 @@
 <body>
     <header>
         <div class="logo">
-        <img src="assets/logo_coderoots.png" alt="Logo Fundamentos da Programação">
+            <img src="assets/logo_coderoots.png" alt="Logo CodeRoots">
         </div>
         <h1>Fundamentos da Programação</h1>
-        <p>Um recurso educacional aberto para iniciantes em programação</p>
+        <p class="tagline">Domine os princípios da programação e construa a base para seguir no mundo do desenvolvimento de software.</p>
     </header>
 
     <nav>
         <ul>
+            <li><a href="#apresentacao">Início</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
             <li><a href="#programacao">O que é Programação?</a></li>
             <li><a href="#variaveis">Variáveis e Tipos</a></li>
             <li><a href="#condicionais">Condicionais</a></li>
@@ -29,7 +31,101 @@
     </nav>
 
     <main>
-        <section id="programacao">
+        <section id="apresentacao" class="apresentacao">
+            <div class="apresentacao-conteudo">
+                <h2>Bem-vindo ao CodeRoots</h2>
+                <p>Nosso curso de <strong>Fundamentos da Programação</strong> foi desenvolvido para iniciantes que desejam aprender os conceitos essenciais da programação de forma prática e acessível.</p>
+                <p>Através de aulas estruturadas, exemplos práticos e exercícios interativos, você construirá uma base sólida para avançar no mundo do desenvolvimento de software.</p>
+                <div class="destaques">
+                    <div class="destaque">
+                        <h3>Aprenda fazendo</h3>
+                        <p>Conceitos aplicados em exemplos práticos.</p>
+                    </div>
+                    <div class="destaque">
+                        <h3>Ritmo próprio</h3>
+                        <p>Estude no seu próprio tempo e ritmo.</p>
+                    </div>
+                    <div class="destaque">
+                        <h3>Conteúdo completo</h3>
+                        <p>Todos os fundamentos essenciais!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="apresentacao-imagem">
+                <img src="assets/conceito_programacao.png" alt="Conceito de programação">
+            </div>
+        </section>
+
+        <section id="conteudo" class="conteudo">
+            <h2>Conteúdo do Curso</h2>
+            <p>Explore nossas aulas organizadas para facilitar seu aprendizado:</p>
+            
+            <div class="grade-cards">
+                <div class="card-aula" data-aula="programacao">
+                    <div class="card-imagem">
+                        <img src="assets/COLOCAR ALGUMA IMAGEM" alt="Programação Básica">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Aula 1 - O que é Programação?</h3>
+                        <p>Entenda os conceitos fundamentais da programação, como computadores interpretam código e por que aprender a programar.</p>
+                        <button class="btn-card">Acessar Aula</button>
+                    </div>
+                </div>
+                
+                <div class="card-aula" data-aula="variaveis">
+                    <div class="card-imagem">
+                        <img src="assets/COLOCAR ALGUMA IMAGEM" alt="Variáveis e Tipos de Dados">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Aula 2 - Variáveis e Tipos de Dados</h3>
+                        <p>Aprenda sobre variáveis, os diferentes tipos de dados e como armazenar informações em seus programas.</p>
+                        <button class="btn-card">Acessar Aula</button>
+                    </div>
+                </div>
+                
+                <div class="card-aula" data-aula="condicionais">
+                    <div class="card-imagem">
+                        <img src="assets/COLOCAR ALGUMA IMAGEM" alt="Estruturas Condicionais">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Aula 3 - Estruturas Condicionais</h3>
+                        <p>Domine as estruturas if/else para tomar decisões em seus programas com base em condições.</p>
+                        <button class="btn-card">Acessar Aula</button>
+                    </div>
+                </div>
+                
+                <div class="card-aula" data-aula="repeticao">
+                    <div class="card-imagem">
+                        <img src="assets/COLOCAR ALGUMA IMAGEM" alt="Laços de Repetição">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Aula 4 - Laços de Repetição</h3>
+                        <p>Explore loops for e while para executar tarefas repetitivas de forma eficiente em seus programas.</p>
+                        <button class="btn-card">Acessar Aula</button>
+                    </div>
+                </div>
+                
+                <div class="card-aula" data-aula="funcoes">
+                    <div class="card-imagem">
+                        <img src="assets/COLOCAR ALGUMA IMAGEM" alt="Funções">
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Aula 5 - Funções</h3>
+                        <p>Aprenda a criar e usar funções para organizar seu código em blocos reutilizáveis e modulares.</p>
+                        <button class="btn-card">Acessar Aula</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal-aula" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar-modal">&times;</span>
+                <div id="conteudo-aula"></div>
+            </div>
+        </div>
+
+        <section id="programacao" class="aula-detalhada">
             <h2>O que é Programação?</h2>
             <p>Programação é o processo de escrever instruções para computadores seguirem. Essas instruções, chamadas de códigos, são escritas em linguagens de programação que os humanos podem aprender e os computadores podem entender.</p>
             <p>A programação é importante porque nos permite criar softwares, aplicativos, sites e sistemas que resolvem problemas, automatizam tarefas e melhoram nossas vidas.</p>
@@ -39,9 +135,19 @@
 console.log("Olá, Mundo!");
                 </pre>
             </div>
+            <div class="video-link-container">
+                <a href="https://www.youtube.com/watch?v=JYUl1Nr4ghA" 
+                target="_blank" 
+                class="youtube-link">
+                    <div class="link-content">
+                        <span class="text">Clique aqui para assistir ao vídeo no YouTube!</span>
+                    </div>
+                </a>
+            </div>
+
         </section>
 
-        <section id="variaveis">
+        <section id="variaveis" class="aula-detalhada">
             <h2>Variáveis e Tipos de Dados</h2>
             <p>Variáveis são como caixas que armazenam informações. Cada variável tem um nome e um valor.</p>
             
@@ -62,9 +168,19 @@ let nome = "Fabrício";           // String
 let estudante = true;         // Booleano
                 </pre>
             </div>
+            <div class="video-link-container">
+                <a href="https://www.youtube.com/watch?v=Ps5Vc5aprX0" 
+                target="_blank" 
+                class="youtube-link">
+                    <div class="link-content">
+                        <span class="text">Clique aqui para assistir ao vídeo no YouTube!</span>
+                    </div>
+                </a>
+            </div>
+
         </section>
 
-        <section id="condicionais">
+        <section id="condicionais" class="aula-detalhada">
             <h2>Estruturas Condicionais</h2>
             <p>As estruturas condicionais permitem que o programa tome decisões com base em condições.</p>
             
@@ -82,9 +198,19 @@ if (nota >= 70) {
 }
                 </pre>
             </div>
+            <div class="video-link-container">
+                <a href="https://www.youtube.com/watch?v=XjQFN7KTJTg" 
+                target="_blank" 
+                class="youtube-link">
+                    <div class="link-content">
+                        <span class="text">Clique aqui para assistir ao vídeo no YouTube!</span>
+                    </div>
+                </a>
+            </div>
+
         </section>
 
-        <section id="repeticao">
+        <section id="repeticao" class="aula-detalhada">
             <h2>Laços de Repetição</h2>
             <p>Laços de repetição permitem executar um bloco de código várias vezes.</p>
             
@@ -114,9 +240,19 @@ while (contador > 0) {
 console.log("Feliz Ano Novo!");
                 </pre>
             </div>
+            <div class="video-link-container">
+                <a href="https://www.youtube.com/watch?v=_6OqeqIYc-8" 
+                target="_blank" 
+                class="youtube-link">
+                    <div class="link-content">
+                        <span class="text">Clique aqui para assistir ao vídeo no YouTube!</span>
+                    </div>
+                </a>
+            </div>
+
         </section>
 
-        <section id="funcoes">
+        <section id="funcoes" class="aula-detalhada">
             <h2>Funções</h2>
             <p>Funções são blocos de código reutilizáveis que realizam uma tarefa específica.</p>
             <p>Elas ajudam a organizar o código, evitar repetição e facilitar a manutenção.</p>
@@ -135,7 +271,7 @@ console.log(mensagem); // "Olá, Carlos!"
             </div>
         </section>
 
-        <section id="exemplos">
+        <section id="exemplos" class="aula-detalhada">
             <h2>Exemplos Práticos</h2>
             <p>Aqui estão alguns exemplos simples utlizando a linguagem Javascript para praticar:</p>
             
@@ -169,7 +305,7 @@ console.log(ehPar(7)); // Deve mostrar false
             </div>
         </section>
 
-        <section id="quiz">
+        <section id="quiz" class="aula-detalhada">
             <h2>Quiz Interativo</h2>
             <p>Teste seus conhecimentos com este pequeno quiz:</p>
             
