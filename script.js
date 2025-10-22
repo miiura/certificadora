@@ -1,7 +1,52 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Adiciona o evento de clique ao botão
-    document.getElementById('verificar-respostas').addEventListener('click', verificarRespostas);
+    // Adiciona o evento de clique ao botão do quiz
+    const quizButton = document.querySelector('button[onclick="verificarRespostas()"]');
+    if (quizButton) {
+        quizButton.addEventListener('click', verificarRespostas);
+    }
+    
+    const cardsAula = document.querySelectorAll('.card-aula');
+    cardsAula.forEach(card => {
+        const button = card.querySelector('.btn-card');
+        button.addEventListener('click', function() {
+            const aulaId = card.getAttribute('data-aula');
+            abrirModalAula(aulaId);
+        });
+    });
+    
+    const modal = document.getElementById('modal-aula');
+    const fecharModal = document.querySelector('.fechar-modal');
+    if (fecharModal) {
+        fecharModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    }
+    
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
+
+// Função para abrir modal com conteúdo da aula
+function abrirModalAula(aulaId) {
+    const modal = document.getElementById('modal-aula');
+    const conteudoAula = document.getElementById('conteudo-aula');
+    
+    const secaoAula = document.getElementById(aulaId);
+    
+    if (secaoAula) {
+        const conteudoClone = secaoAula.cloneNode(true);
+        
+        conteudoClone.classList.remove('aula-detalhada');
+        
+        conteudoAula.innerHTML = '';
+        conteudoAula.appendChild(conteudoClone);
+        
+        modal.style.display = 'block';
+    }
+}
 
 // Função para verificar as respostas do quiz
 function verificarRespostas() {
