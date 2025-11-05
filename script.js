@@ -53,11 +53,14 @@ function verificarRespostas() {
     const respostasCorretas = {
         pergunta1: "b",
         pergunta2: "b",
-        pergunta3: "b"
+        pergunta3: "b",
+        pergunta4: "b",
+        pergunta5: "b",
+        pergunta6: "b"
     };
     
     let pontuacao = 0;
-    const totalPerguntas = 3;
+    const totalPerguntas = 6;
     
     for (let i = 1; i <= totalPerguntas; i++) {
         const pergunta = document.querySelector(`input[name="pergunta${i}"]:checked`);
