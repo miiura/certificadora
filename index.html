@@ -1246,48 +1246,47 @@ print(mensagem)  # "Olá, Carlos!"
 
         <section id="exemplos" class="pratica">
             <h2>Exemplos Práticos</h2>
-            <p>Aqui estão alguns exemplos simples utlizando a linguagem Python para praticar:</p>
+            <p>Aqui estão alguns exemplos simples utlizando a linguagem Python para fixação do conteúdo:</p>
 
             <div class="exercicio">
-                <h3>Exercício 1: Calculadora Simples</h3>
-                <p>Crie uma função que some dois números e retorne o resultado.</p>
+                <h3>Exemplo 1: Calculadora Simples</h3>
+                <p>Vamos criar uma função que some dois números e retorne o resultado.</p>
                 <div class="exemplo-codigo">
                     <pre>
-def somar(a, b):
-    # Escreva seu código aqui
-    return a + b
+def somar(a, b):    # cria uma função que recebe dois parâmetros
+    return a + b    # retorna a soma dos dois parâmetros
 
-print(somar(5, 3))  # Deve mostrar 8
+print(somar(5, 3))  # O resultado será 8 -- pois 5 + 3 = 8
                     </pre>
                 </div>
             </div>
 
             <div class="exercicio">
-                <h3>Exercício 2: Verificador de Números Pares</h3>
-                <p>Crie uma função que verifique se um número é par.</p>
+                <h3>Exemplo 2: Verificador de Números Pares</h3>
+                <p>Vamos criar uma função que verifique se um número é par.</p>
                 <div class="exemplo-codigo">
                     <pre>
-def ehPar(numero):
-    # Escreva seu código aqui
-    return numero % 2 == 0
+def ehPar(numero):   # cria uma função que recebe um número como parâmetro
+    return numero % 2 == 0  # retorna True se o número for par, False caso contrário
+    # usamos o operador % (resto/módulo) para verificar se o número é divisível por 2, e se o resto for 0.
 
-print(ehPar(4))  # Deve mostrar True
-print(ehPar(7))  # Deve mostrar False
+print(ehPar(4))  # O resultado deverá mostrar True
+print(ehPar(7))  # O resultado deverá mostrar False
                     </pre>
                 </div>
             </div>
 
             <div class="exercicio">
-                <h3>Exercício 3: Convertor de Celsius para Fahrenheit</h3>
-                <p>Crie uma função que converta uma temperatura em Celsius para Fahrenheit.</p>
+                <h3>Exemplo 3: Convertor de Celsius para Fahrenheit</h3>
+                <p>Vamos criar uma função que converta uma temperatura em Celsius para Fahrenheit.</p>
                 <div class="exemplo-codigo">
                     <pre>
-def converterParaFahrenheit(celsius):
-    # Escreva seu código aqui
-    return (celsius * 9/5) + 32
+def converterParaFahrenheit(celsius):   # cria uma função que recebe a temperatura em Celsius
+    return (celsius * 9/5) + 32     # aplica a fórmula de conversão e retorna o valor em Fahrenheit
+    # a fórmula é a mesma coisa que : (Celsius * 9 ÷ 5) + 32 = (Celsius * 1.8) + 32
 
-print(converterParaFahrenheit(0))   # Deve mostrar 32
-print(converterParaFahrenheit(25))  # Deve mostrar 77
+print(converterParaFahrenheit(0))   # O resultado deverá mostrar 32
+print(converterParaFahrenheit(25))  # O resultado deverá mostrar 77
                     </pre>
                 </div>
             </div>
