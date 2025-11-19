@@ -7,8 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const cardsAula = document.querySelectorAll('.card-aula');
     cardsAula.forEach(card => {
-        const button = card.querySelector('.btn-card');
-        button.addEventListener('click', function() {
+        const button = card.querySelector('.btn-card');    
+    // Se o botão for marcado como download, não abre modal
+    if (button.hasAttribute("data-no-modal")) return;
+        button.addEventListener('click', function () {
             const aulaId = card.getAttribute('data-aula');
             abrirModalAula(aulaId);
         });
