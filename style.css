@@ -504,3 +504,41 @@ footer {
         margin: 2% auto;
     }
 }
+
+/* Garante espaço interno para o botão não sobrepor conteúdo e permite posicionamento absoluto */
+.apresentacao,
+.aula-detalhada,
+.conteudo {
+    position: relative;
+    padding-bottom: 4rem; /* aumenta o espaço inferior para o botão */
+}
+
+/* Posiciona o botão centralizado no final da seção */
+.apresentacao .download-guide,
+.aula-detalhada .download-slide,
+.conteudo .download-slide {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* mantém aparência do botão */
+.download-guide .btn-card,
+.download-slide .btn-card {
+    display: inline-block;
+}
+
+.download-guide,
+.download-slide {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente se houver altura */
+    text-align: center;
+    padding: 1rem 0;
+}
