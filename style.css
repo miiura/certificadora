@@ -17,6 +17,11 @@ body {
     background-color: #f9f9f9;
 }
 
+.verde {
+    color: #2ecc71; 
+    font-weight: bold; 
+}
+
 /* Cabeçalho */
 .logo {
     height: 120px;
