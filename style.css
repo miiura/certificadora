@@ -246,6 +246,18 @@ li {
     background-color: #657296;
 }
 
+.botoes-duplos {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.botoes-duplos .btn-card {
+    flex: 1; 
+    text-align: center;
+}
+
+
 /* Modal */
 .modal {
     display: none;
@@ -493,3 +505,4 @@ footer {
         margin: 2% auto;
     }
 }
+
